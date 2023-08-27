@@ -1,0 +1,55 @@
+*, ::before,::after{
+    padding: 0;
+    margin: 0;
+    color:white;
+}
+body{
+    background-color: #000000;
+    display: block;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+.menu{
+    height: 40px;
+    width: 40px;
+    border-radius:7px;
+    position: absolute;
+    margin: 10px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    /* padding: auto; */
+    padding-top: 2px;
+    display: grid;
+    gap: 0px;
+    /* grid-template-rows: 1fr ; */
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    cursor: pointer;
+
+}
+/* .menu:hover{
+    /* transform: scale(1.05,1.05); */
+    /* transform: translate(20px,20px); 
+} */
+.t{
+    background-color: #ffffff;
+    width: 20px;
+    height: 2px;
+    /* display: none; */
+    /* border-radius: 4px; */
+    /* margin: auto; */
+    /* cursor: pointer;  */
+}
+.obj{
+    background-color: #ffffff;
+    width: 20px;
+    height: 30px;
+    display: none;
+    border-radius: 4px;
+    /* margin: auto; */
+    /* cursor: pointer;  */
+}
