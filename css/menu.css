@@ -2,15 +2,15 @@
     padding: 0;
     margin: 0;
     color:white;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: #000000;
-    display: block;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
 }
 .menu{
     height: 40px;
@@ -21,7 +21,6 @@ body{
     border: 1px solid #ffffff;
     background-color: #000000;
     /* padding: auto; */
-    padding-top: 2px;
     display: grid;
     gap: 0px;
     /* grid-template-rows: 1fr ; */
@@ -45,11 +44,64 @@ body{
     /* cursor: pointer;  */
 }
 .obj{
-    background-color: #ffffff;
-    width: 20px;
-    height: 30px;
+    /* background-color: #ffffff; */
+    z-index: 1000;
+    width: 70px;
+    height: 70px;
     display: none;
-    border-radius: 4px;
-    /* margin: auto; */
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 1px solid;
+    text-align: center;
+    margin: auto;
+    line-height: 70px;
+    /* padding: 20px; */
     /* cursor: pointer;  */
 }
+.obj:hover{
+    border-radius: 4px;
+    width: 150px;
+}
+.tab{
+    width: 98%;
+    max-width: 400px;
+    height: 45%;
+    position: relative;
+    display: block;
+    margin: auto;
+    /* display: none; */
+    top: 54%;
+    /* left: 20%; */
+    border-radius: 10px;
+    border: 1px solid;
+    /* background-color: #300c0c; */
+}
+.srch{
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 25px;
+    top: 15%;
+    left: 4.5%;
+    background-color: #000000;
+}
+.srch:focus-visible{
+    border: 3px solid;
+}
+.close{
+    display: block;
+    width: 15px;
+    height: 5px;
+    /* position: relative; */
+    /* left: 90%;
+    transform: rotateZ(45deg); */
+}
+/* .close::before{
+    content: "1";
+    background-color: #ffffff;
+    width: 15px;
+    height: 5px;
+} */
