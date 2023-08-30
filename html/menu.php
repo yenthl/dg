@@ -15,14 +15,20 @@
         <span class="t"></span>
         <span class="t"></span>
 
-        <span class="obj" id="n1" onclick="tab()"><p>search</p></span>
-        <span class="obj" id="n2" onclick="tab_1()"><p>cart</p></span>
-        <span class="obj" id="n3" onclick="tab_2()"><p>receipts</p></span>
+        <span class="obj" id="n1" onclick="open_tab(0)"><p>search</p></span>
+        <span class="obj" id="n2" onclick="open_tab(1)"><p>cart</p></span>
+        <span class="obj" id="n3" onclick="open_tab(2)"><p>receipts</p></span>
+        <a class="obj" id="n4" href="http://nigga.com/"><p>leave</p></a>
 
     </nav>
-    <div class="tab">
-        <span class="close"></span>
-        <input type="text" name="search" id="" class="srch">
+    <div class="tab" id="tab" >
+        <div class="close" onclick="close_tab()">
+            <span class="x" ></span>
+        </div>
+        <div class="search_tab results_container menu_el" id="results_container">
+            <span class="result"></span>
+        </div>
+        <input type="text" name="search" id="srch" class="search_tab srch menu_el">
     </div>
     <script src="../js/menu.js"></script>
 </body>

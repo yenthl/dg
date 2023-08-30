@@ -1,8 +1,11 @@
 const menu = document.getElementById("menu");
+const tab = document.getElementById("tab");
 let t = document.getElementsByClassName("t");
 let obj = document.getElementsByClassName("obj");
+
 let is_locked = 1;
-console.log(t)
+let p = 0
+let menu_elements = [document.getElementsByClassName("search_tab"),document.getElementsByClassName("cart_tab"),document.getElementsByClassName("receipts_tab")]
 
 function unlock() {
     if (is_locked) {
@@ -26,6 +29,23 @@ function unlock() {
         is_locked = 1;
     }
 }
-function tab(num) {
-    
+function close_tab() {
+    tab.style.top = "120%";
+    a = document.getElementsByClassName("menu_el")
+    for (let i = 0; i < a.length; i++) {
+        a[i].style.display = "none"
+    }
+    // tab.style.display = "none";
+}
+function open_tab(n) {
+    tab.style.top = "54%";
+    if (n != p) {
+        for (let i = 0; i < menu_elements[p].length; i++) {
+            menu_elements[p][i].style.display = "none"
+        }
+    }
+    for (let i = 0; i < menu_elements[n].length; i++) {
+        menu_elements[n][i].style.display = "grid"
+    }
+    p = n;
 }
