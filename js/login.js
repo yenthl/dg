@@ -5,7 +5,7 @@ let obj = document.getElementsByClassName("obj");
 
 let is_locked = 1;
 let p = 0
-let menu_elements = [document.getElementsByClassName("search_tab"),document.getElementsByClassName("cart_tab"),document.getElementsByClassName("receipts_tab")]
+let menu_elements = [document.getElementsByClassName("login_tab"),document.getElementsByClassName("signin_tab")]
 
 function unlock() {
     if (is_locked) {
